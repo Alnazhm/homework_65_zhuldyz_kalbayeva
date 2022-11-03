@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    // Задача 1
+    // Задание 1
 let myList = ['молоко', 'пиво', 'пиво', 'молоко', 'молоко'];
 for(let i = 0;i < myList.length; i++){
     if(myList[i] === 'молоко'){
@@ -16,6 +16,23 @@ for(let i = 0;i < myList.length; i++){
         console.log('плохо');
     }
 }
+</script>
+<script>
+    // Задание 2
+let myList1 = [1, 5, 12, 4, 3];
+let myList2 = [2, 3, 4, 5, 6, 7, 8, 9, 10];
+let myList3 = [3, 10, 17];
+
+function averageList(lists) {
+   let sum = 0;
+   for(var i = 0; i < lists.length; i++) {
+       sum += lists[i];
+   }
+   return sum / lists.length;
+}
+console.log(averageList(myList1));
+console.log(averageList(myList2));
+console.log(averageList(myList3));
 </script>
 </body>
 </html>
